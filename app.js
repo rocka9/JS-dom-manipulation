@@ -1,25 +1,16 @@
-// DOM selectors
-
-// getElementbyId()
- const title = document.getElementById('my-title');
- console.log(title)
-
-// getElementByClassName()
-const heading = document.getElementsByClassName('heading');
-console.log(heading)
-
-const listItems = document.getElementsByClassName('list-item');
-console.log(listItems)
-
-// getElementByTagName()
-let myTag = document.getElementsByTagName('li');
-console.log(myTag)
+// Styling elements
 
 // querySelector()
 
-let myFirstDiv = document.querySelector('div')
-console.log(myFirstDiv)
+let myFirstDiv = document.querySelector('#my-title')
+myFirstDiv.style.color = 'blue'
 
 // querySelectorAll()
-let allMyDiv = document.querySelectorAll('div')
-console.log(allMyDiv)
+let allMyDiv = document.querySelectorAll('.list-item')
+
+
+for(i = 0; i<allMyDiv.length; i++) {
+    allMyDiv[i].style.backgroundColor = 'yellow'
+}
+
+// setAttribute
